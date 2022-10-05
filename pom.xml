@@ -124,7 +124,7 @@
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
                 <version>${version.lombok}</version>
-                <optional>true</optional>
+                <optional>false</optional>
             </dependency>
             <dependency>
                 <groupId>org.apache.commons</groupId>
