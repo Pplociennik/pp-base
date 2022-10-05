@@ -58,6 +58,7 @@
 
         <version.h2-database>2.1.210</version.h2-database>
         <version.deploy-plugin>3.0.0</version.deploy-plugin>
+        <version.lombok>1.18.24</version.lombok>
     </properties>
 
     <dependencies>
@@ -122,6 +123,7 @@
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
+                <version>${version.lombok}</version>
                 <optional>true</optional>
             </dependency>
             <dependency>
