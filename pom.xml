@@ -55,7 +55,7 @@
         <version.commons-lang3>3.12.0</version.commons-lang3>
         <version.commons-collections4>4.4</version.commons-collections4>
         <version.ehcache-core>2.6.11</version.ehcache-core>
-        <liquibase.version>4.4.2</liquibase.version>
+        <liquibase.version>4.19.0</liquibase.version>
 
         <version.h2-database>2.1.214</version.h2-database>
         <version.mssql-jdbc>11.2.2.jre11</version.mssql-jdbc>
