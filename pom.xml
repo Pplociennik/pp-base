@@ -2,7 +2,7 @@
 <!--
   ~ MIT License
   ~
-  ~ Copyright (c) 2021 Przemysław Płóciennik
+  ~ Copyright (c) 2024 Przemysław Płóciennik
   ~
   ~ Permission is hereby granted, free of charge, to any person obtaining a copy
   ~ of this software and associated documentation files (the "Software"), to deal
@@ -40,9 +40,9 @@
     <packaging>pom</packaging>
 
     <properties>
-        <java.version>11</java.version>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <java.version>17</java.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
 
         <version.javadoc-plugin>3.6.3</version.javadoc-plugin>
         <version.resources-plugin>3.3.1</version.resources-plugin>
