@@ -29,7 +29,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.0.1</version>
+        <version>3.2.3</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -44,65 +44,62 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
 
-        <version.javadoc-plugin>3.3.0</version.javadoc-plugin>
-        <version.resources-plugin>3.1.0</version.resources-plugin>
-        <version.clean-plugin>3.1.0</version.clean-plugin>
-        <version.dependency-plugin>3.2.0</version.dependency-plugin>
-        <version.dependency-check>7.4.4</version.dependency-check>
+        <version.javadoc-plugin>3.6.3</version.javadoc-plugin>
+        <version.resources-plugin>3.3.1</version.resources-plugin>
+        <version.clean-plugin>3.3.2</version.clean-plugin>
+        <version.dependency-plugin>3.6.1</version.dependency-plugin>
+        <version.dependency-check>9.0.9</version.dependency-check>
+        <version.source-plugin>3.3.0</version.source-plugin>
 
-        <version.swagger>3.0.0</version.swagger>
-
-        <version.commons-lang3>3.12.0</version.commons-lang3>
+        <version.commons-lang3>3.14.0</version.commons-lang3>
         <version.commons-collections4>4.4</version.commons-collections4>
         <version.ehcache-core>2.6.11</version.ehcache-core>
-        <liquibase.version>4.19.0</liquibase.version>
+        <liquibase.version>4.26.0</liquibase.version>
 
-        <version.h2-database>2.1.214</version.h2-database>
-        <version.mssql-jdbc>11.2.2.jre11</version.mssql-jdbc>
-        <version.deploy-plugin>3.0.0</version.deploy-plugin>
-        <version.lombok>1.18.24</version.lombok>
+        <version.h2-database>2.2.224</version.h2-database>
+        <version.mssql-jdbc>12.6.1.jre11</version.mssql-jdbc>
+        <version.deploy-plugin>3.1.1</version.deploy-plugin>
+        <version.lombok>1.18.30</version.lombok>
     </properties>
-
-    <dependencies>
-        <!--   Spring dependencies     -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-rest</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jdbc</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context-support</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-mail</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
 
     <dependencyManagement>
 
         <dependencies>
+
+            <!--   Spring dependencies     -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-jpa</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-rest</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-jdbc</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context-support</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-actuator</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-mail</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <scope>test</scope>
+            </dependency>
 
             <!--    Database dependencies    -->
 
@@ -149,6 +146,11 @@
                 <artifactId>ehcache-core</artifactId>
                 <version>${version.ehcache-core}</version>
             </dependency>
+            <dependency>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>${version.source-plugin}</version>
+            </dependency>
 
         </dependencies>
 
@@ -156,16 +158,13 @@
 
     <build>
 
-        <plugins>
-            <plugin>
-                <groupId>org.owasp</groupId>
-                <artifactId>dependency-check-maven</artifactId>
-                <version>${version.dependency-check}</version>
-            </plugin>
-        </plugins>
-
         <pluginManagement>
             <plugins>
+                <plugin>
+                    <groupId>org.owasp</groupId>
+                    <artifactId>dependency-check-maven</artifactId>
+                    <version>${version.dependency-check}</version>
+                </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-deploy-plugin</artifactId>
