@@ -60,6 +60,7 @@
         <version.mssql-jdbc>12.6.1.jre11</version.mssql-jdbc>
         <version.deploy-plugin>3.1.1</version.deploy-plugin>
         <version.lombok>1.18.30</version.lombok>
+        <version.springdoc-openapi-starter-webmvc-ui>2.3.0</version.springdoc-openapi-starter-webmvc-ui>
     </properties>
 
     <dependencyManagement>
@@ -79,14 +80,6 @@
                 <version>${version.mssql-jdbc}</version>
             </dependency>
 
-
-            <!--   Swagger     -->
-
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-boot-starter</artifactId>
-                <version>${version.swagger}</version>
-            </dependency>
 
             <!--    Additional libraries    -->
 
