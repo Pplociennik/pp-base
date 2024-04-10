@@ -44,12 +44,16 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
 
+        <maven.build.timestamp.format>dd.MM.yyyy.HH.mm.ss</maven.build.timestamp.format>
+        <buildNumber>${maven.build.timestamp}</buildNumber>
+
         <version.javadoc-plugin>3.6.3</version.javadoc-plugin>
         <version.resources-plugin>3.3.1</version.resources-plugin>
         <version.clean-plugin>3.3.2</version.clean-plugin>
         <version.dependency-plugin>3.6.1</version.dependency-plugin>
         <version.dependency-check>9.0.9</version.dependency-check>
         <version.source-plugin>3.3.0</version.source-plugin>
+        <version.resources-plugin>3.3.1</version.resources-plugin>
 
         <version.commons-lang3>3.14.0</version.commons-lang3>
         <version.commons-collections4>4.4</version.commons-collections4>
