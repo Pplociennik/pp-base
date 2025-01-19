@@ -29,7 +29,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.3.2</version>
+        <version>3.3.7</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -54,6 +54,7 @@
         <version.dependency-check>9.0.9</version.dependency-check>
         <version.source-plugin>3.3.0</version.source-plugin>
         <version.resources-plugin>3.3.1</version.resources-plugin>
+        <version.maven-exec-plugin>3.0.0</version.maven-exec-plugin>
 
         <version.commons-lang3>3.14.0</version.commons-lang3>
         <version.commons-collections4>4.4</version.commons-collections4>
@@ -67,6 +68,11 @@
         <version.springdoc-openapi-starter-webmvc-ui>2.3.0</version.springdoc-openapi-starter-webmvc-ui>
 
         <spring-cloud.version>2023.0.1</spring-cloud.version>
+
+        <!-- pp libraries -->
+        <version.pp-commons>1.3.0-SNAPSHOT</version.pp-commons>
+        <version.pp-modinfo>1.3.0-SNAPSHOT</version.pp-modinfo>
+
     </properties>
 
     <dependencyManagement>
