@@ -68,6 +68,7 @@
         <version.springdoc-openapi-starter-webmvc-ui>2.3.0</version.springdoc-openapi-starter-webmvc-ui>
 
         <spring-cloud.version>2023.0.1</spring-cloud.version>
+        <version.opentelemetry-javaagent>2.12.0</version.opentelemetry-javaagent>
 
         <!-- pp libraries -->
         <version.pp-commons>1.3.0-SNAPSHOT</version.pp-commons>
